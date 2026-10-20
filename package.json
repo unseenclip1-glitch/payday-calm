@@ -1,0 +1,29 @@
+{
+  "name": "payday-calm",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:demo": "vite build --mode demo",
+    "build:all": "vite build && vite build --mode demo",
+    "preview": "vite preview",
+    "preview:demo": "vite preview --outDir dist-demo --port 4174"
+  },
+  "author": "Payday Calm",
+  "license": "UNLICENSED",
+  "description": "Payday Calm – a calm, ADHD-friendly Safe-to-Spend paycheck planner (offline PWA)",
+  "devDependencies": {
+    "vite": "^6.4.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "workbox-core": "^7.4.1",
+    "workbox-precaching": "^7.4.1",
+    "workbox-routing": "^7.4.1",
+    "workbox-strategies": "^7.4.1"
+  },
+  "dependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0"
+  },
+  "private": true,
+  "type": "module"
+}

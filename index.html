@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Payday Calm – Safe-to-Spend Planner</title>
+  <meta name="description" content="A calm, ADHD-friendly paycheck budget planner. One number tells you what's safe to spend. Private, offline, no bank connection.">
+  <meta name="theme-color" content="#FBF6EE">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Payday Calm">
+  <link rel="icon" href="./icons/icon-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <style>
+    /* tiny inline splash so the first paint is never blank */
+    #boot { position: fixed; inset: 0; display: grid; place-items: center; background: #FBF6EE; font: 600 16px system-ui; color: #3F7D6E; }
+    @media (prefers-color-scheme: dark) { #boot { background: #161A26; color: #7CC4B2; } }
+  </style>
+</head>
+<body>
+  <div id="boot">Opening your planner…</div>
+  <div id="app"></div>
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+  <noscript>Payday Calm needs JavaScript turned on. Please open it in Safari or Chrome.</noscript>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
